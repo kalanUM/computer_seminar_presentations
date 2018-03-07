@@ -1,15 +1,19 @@
-# Flux 
+@title[Table of Contents Labels]
 
-An application architecture for React
+# Computers and the CLI 
 
----
+Interacting with operating systems
 
-### Flux Design
+Who needs a mouse when we have keys!
 
-- Dispatcher: Manages Data Flow
-- Stores: Handle State & Logic
-- Views: Render Data via React
+To begin, double-click a web browser (GitBash, Terminal) icon... with your mouse
 
----
+---include?topics/1_intro/PITCHME.md
 
-![Flux Explained](https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.png)
+---include?topics/2_shell/PITCHME.md
+
+---include?topics/3_scripting/PITCHME.md
+
+---include?topics/4_programming/PITCHME.md
+
+---include?topics/5_text_manipulation/PITCHME.md
