@@ -23,13 +23,14 @@ Vertical slide examples, made entirely of images (in assets)
 
 #HSLIDE
 
-# Computers and the CLI 
+## Computers and the CLI 
 
-Interacting with operating systems
+### Interacting with operating systems |
 
-Who needs a mouse when we have keys!
+Who needs a mouse when we have keys! |
 
-To begin, double-click a web browser (GitBash, Terminal) icon... with your mouse
+To begin, double-click a web browser (GitBash, Terminal) icon...  
+with your mouse
 
 ---
 @title[Introduction Slides]
@@ -54,7 +55,7 @@ None of these pipes are working in preview
   - Terminal on Mac OS
   - GitBash on Windows
 
-+++?image=relative1/green_moon.jpg
++++?image=assets/green_moon.jpg
 <p><span class="menu-title slide-title">HTML Version of a GitPitch Slide Title</span></p>
 
 HTML titles work, and they display in regular font at top of slide 
@@ -89,7 +90,7 @@ Everything we can do graphically, we can also do with the keyboard:
 - search
 - manipulate text
 
-![GUI drag & drop, search](relative1/path.jpg)
+![GUI drag & drop, search](assets/path.jpg)
 
 @fa[arrow-down]
 
@@ -106,14 +107,14 @@ Note:
 @title[How computers represent information]
 
 Computers have hardware & software:
-![computer stuff](relative1/path.jpg)
+![computer stuff](assets/path.jpg)
 
 They're built to help process information: 
 - store & access data
 - perform calculations & tasks 
 
 They receive input & produce output:
-![terminal stuff](relative1/path.jpg)
+![terminal stuff](assets/path.jpg)
 
 Note:
 "Folders" are also files (more on this later)
@@ -149,10 +150,10 @@ How do processes work?
 > by following detailed instructions!
 
 Special files called **program files** contain procedures * instructions for the computer:
-![bin or exe images, MS Office icons](relative1/path.jpg)
+![bin or exe images, MS Office icons](assets/path.jpg)
 
 Let's dig in with a metaphor!
-![kitchen, chef images](relative1/path.jpg)
+![kitchen, chef images](assets/path.jpg)
 
 @fa[arrow-right]
 
@@ -165,8 +166,8 @@ Computers are like commercial kitchens:
 - full of machinery & instructions
 - need "guidance" (staff, recipes, orders)
 
-![more kitchen & computer images](relative1/path.jpg)
-![including a pantry](relative1/path.jpg)
+![more kitchen & computer images](assets/path.jpg)
+![including a pantry](assets/path.jpg)
 
 @fa[arrow-down]
 
@@ -191,14 +192,14 @@ computer equipment only does _what instructed to do_
 ## Robot Kitchen Equipment
 
 Robot Kitchen's Stand Mixer:
-![stand mixer](relative1/path.jpg)
+![stand mixer](assets/path.jpg)
 
 > Until a robot chef pushes some buttons, it doesn't do anything  
 > 
 > If Robot Chef pushes the _wrong_ buttons, the mixer might ruin your order
 
 
----?image=relative1/orange_moon.jpg
+---?image=assets/orange_moon.jpg
 @title[Exercise:  make an order (push GUI buttons)]
 
 ## Exercise:  make an order
@@ -244,12 +245,12 @@ Robot Kitchen's Stand Mixer:
 
 - How well kitchens perform often depends on recipes
 - Robot Kitchen staff know about some basic recipes
-  - ![system programs image](relative1/path.jpg)
+  - ![system programs image](assets/path.jpg)
 - We can provide custom recipes
-  - ![pie.sh screenshot](relative1/path.jpg)
+  - ![pie.sh screenshot](assets/path.jpg)
 
 
----?image=relative1/orange_moon.jpg
+---?image=assets/orange_moon.jpg
 @title[Exercise:  recipes)]
 
 ## Exercise:  recipes
@@ -267,9 +268,9 @@ Robot Kitchen's Stand Mixer:
 @title[How computers follow recipes]
 
 - In general, recipes can be:
-  - live or stored ![input devices, commands](relative1/path.jpg)
-  - yours or someone else's ![mouse clics, OS](relative1/path.jpg)
-  - direct or indirect ![in machine language, needs interpretation](relative1/path.jpg)
+  - live or stored ![input devices, commands](assets/path.jpg)
+  - yours or someone else's ![mouse clics, OS](assets/path.jpg)
+  - direct or indirect ![in machine language, needs interpretation](assets/path.jpg)
 
 Note:
 Live instructions
@@ -293,7 +294,7 @@ Direct (_compiled_):  recipes like C code
 Note:
 For 'interpreted' languages 
 
----?image=relative1/green_moon.jpg
+---?image=assets/green_moon.jpg
 <p><span class="menu-title slide-title">Definitions</span></p>
 
 ## Definitions
@@ -311,11 +312,11 @@ For 'interpreted' languages
 
 - In Robot Kitchen, staff includes: |
   - Servers to take orders 
-    ![Server Shells](relative1/path.jpg) |
+    ![Server Shells](assets/path.jpg) |
   - Demi-chefs to use equipment & ingredients 
-    ![system programs](relative1/path.jpg) |
+    ![system programs](assets/path.jpg) |
   - Head Chef to oversee demi-chefs & kitchen
-    ![system programs](relative1/path.jpg) |
+    ![system programs](assets/path.jpg) |
 
 @fa[arrow-down]
 
@@ -337,7 +338,7 @@ For 'interpreted' languages
 - **System Programs** use equipment & ingredients
 - Head Chef **Kernel** oversees programs & kitchen use 
 
----?image=relative1/green_moon.jpg
+---?image=assets/green_moon.jpg
 <p><span class="menu-title slide-title">Operating System Components</span></p>
 
 ## Operating System Components
@@ -409,7 +410,7 @@ When your order comes in from Server Shell, Chef Kernel delegates some work to t
 - How?
 > Let's first add a pie recipe to your pantry 
 
----?image=relative1/orange_moon.jpg
+---?image=assets/orange_moon.jpg
 <p><span class="menu-title slide-title">Exercise:  Download files, GUI</span></p>
 
 ## Exercise:  Download files, GUI
@@ -444,7 +445,7 @@ When your order comes in from Server Shell, Chef Kernel delegates some work to t
 > onto a shelf in the pantry
 
 - Files (like recipes) live in non-volatile storage, like hard discs
-  - ![hard disc/drive](relative1/path.jpg)
+  - ![hard disc/drive](assets/path.jpg)
   - stored data
   - "long-term" memory
   - persist through power loss
@@ -454,13 +455,13 @@ When your order comes in from Server Shell, Chef Kernel delegates some work to t
 
 - Computers parallel paper filing systems: |
   - recipes & notes, kept in folders, kept in drawers or on shelves
-  - ![pantry, discs](relative1/path.jpg) |
+  - ![pantry, discs](assets/path.jpg) |
   - hands, to sort & hold notes 
-  - ![hands, RAM](relative1/path.jpg) |
+  - ![hands, RAM](assets/path.jpg) |
   - calculators, scales, & measuring equipment 
-  - ![CPU, cale, tablespoons](relative1/path.jpg) |
+  - ![CPU, cale, tablespoons](assets/path.jpg) |
   - instructions & manuals 
-  - ![software, stand mixer manual](relative1/path.jpg)
+  - ![software, stand mixer manual](assets/path.jpg)
 
 ---?code=path/to/source.file
 
