@@ -1,43 +1,17 @@
-@title[these are Table of Contents Labels and do not show on slides]
-
-None of these @titles or @fa work in local preview 
-Check if alternate slide syntax works 
-text sizing is also not working in local preview  
-
-#VSLIDE
-
-Vertical slide examples, made entirely of images (in assets)
-
-#VSLIDE?image=assets/img0.png
-<!-- .slide: data-background-transition="none" -->
-#VSLIDE?image=assets/img1.png
-<!-- .slide: data-background-transition="none" -->
-
-#HSLIDE
-
-## Single element fragment HTML 
-
-<span class="fragment">
-**synchronous** *adj.* - existing or occurring at the same time.
-</span>
-
-#HSLIDE
-
+@title[Computers and the CLI]
 ## Computers and the CLI 
 
 ### Interacting with operating systems 
 
-Who needs a mouse when we have keys! 
+Who needs a mouse when we have keys! <!-- .element: class="fragment" -->
 
-To begin, double-click a web browser (GitBash, Terminal) icon...  
-with your mouse
+To begin, double-click a web browser (GitBash, Terminal) icon...  <!-- .element: class="fragment" -->
+with your mouse <!-- .element: class="fragment" -->
 
 ---
 @title[Introduction Slides]
 
 ### Learning Objectives
-
-None of these pipes are working in preview 
 
 - Understand how computers represent information |
 - Understand how to intercat with the computer using commands |
@@ -45,7 +19,7 @@ None of these pipes are working in preview
 
 @fa[arrow-down]
 
-+++?color=orange
++++?image=assets/bg_images/green_moon.jpg&color=orange
 
 ### Assumptions
 
@@ -55,8 +29,7 @@ None of these pipes are working in preview
   - Terminal on Mac OS
   - GitBash on Windows
 
-+++?image=assets/green_moon.jpg
-<p><span class="menu-title slide-title">HTML Version of a GitPitch Slide Title</span></p>
++++?image=assets/bg_images/green_moon.jpg
 
 HTML titles work, and they display in regular font at top of slide 
 HTML fragments work, too 
@@ -75,29 +48,20 @@ HTML fragments work, too
 
 @fa[arrow-right]
 
-[comment]: # (images are the GitPitch way to control individual slide bgs without custom CSS)
-
-[comment]: # (comments like this, with newline above, should not render in HTML or GitPitch)
-
 ---
 @title[How computers represent information]
 
 ## How computers represent information 
 
 Everything we can do graphically, we can also do with the keyboard:
-- manage documents (move, rename)
-- manage permissions 
-- search
+- manage documents (move, rename) |
+- manage permissions |
+- search |
 - manipulate text
 
 ![GUI drag & drop, search](assets/path.jpg)
 
 @fa[arrow-down]
-
-
-[comment]: # (add '?n=true' to GitPitch URL to view Speaker Notes)
-
-[comment]: # (press 's' on keyboard to enter GitPitch Seaker Notes Pane view)
 
 Note:
 - How?  Computers take the same orders, regardless of the interface.
@@ -490,3 +454,38 @@ The *same syntax* you use to create project
 ---
 
 ![Flux Explained](https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.png)
+
+#VSLIDE
+<p><span class="menu-title slide-title">HTML Version of a GitPitch Slide Title</span></p>
+
+Vertical slide syntax, examples made of images (in assets)
+
+#VSLIDE?image=assets/img0.png
+<!-- .slide: data-background-transition="none" -->
+#VSLIDE?image=assets/img1.png
+<!-- .slide: data-background-transition="none" -->
+
+#HSLIDE
+
+## Single element fragment HTML 
+
+<span class="fragment">
+**synchronous** *adj.* - existing or occurring at the same time.
+</span>
+
+#HSLIDE
+
+GitPitch comments slide 
+should not render in GitHub or GitPitch 
+
+
+
+[comment]: # (add '?n=true' to GitPitch URL to view Speaker Notes)
+
+[comment]: # (press 's' on keyboard to enter GitPitch Seaker Notes Pane view)
+
+
+[comment]: # (images are the GitPitch way to control individual slide bgs without custom CSS)
+
+[comment]: # (comments like this, with newline above, should not render in HTML or GitPitch)
+
