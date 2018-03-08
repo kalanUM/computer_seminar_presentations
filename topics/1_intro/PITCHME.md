@@ -1,4 +1,4 @@
-@title[these are Table of Contents Labels]
+@title[these are Table of Contents Labels and do not show on slides]
 
 None of these @titles or @fa work in local preview 
 Check if alternate slide syntax works 
@@ -25,9 +25,9 @@ Vertical slide examples, made entirely of images (in assets)
 
 ## Computers and the CLI 
 
-### Interacting with operating systems |
+### Interacting with operating systems 
 
-Who needs a mouse when we have keys! |
+Who needs a mouse when we have keys! 
 
 To begin, double-click a web browser (GitBash, Terminal) icon...  
 with your mouse
@@ -126,7 +126,7 @@ How do we give them information to process?
 > by typing it, traditionally
 
 How do they process it?
-> by folllowing special instructions (that someone else typed)
+> by following special instructions (that someone else typed)
 
 To a computer, all information is either:
 - a **file** (stored data, static)

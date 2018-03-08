@@ -1,4 +1,4 @@
 #theme : night
-#theme-override : assets/css/PITCHME.css
-layout : center-left
+theme-override : assets/css/PITCHME.css
+#layout : center-left
 footnote : "© 2018 Something Something Footnote"
