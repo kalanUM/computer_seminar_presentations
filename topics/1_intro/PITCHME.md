@@ -45,7 +45,7 @@ None of these pipes are working in preview
 
 @fa[arrow-down]
 
-+++
++++?color=orange
 
 ### Assumptions
 
