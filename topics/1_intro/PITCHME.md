@@ -8,8 +8,9 @@ Who needs a mouse when we have keys! <!-- .element: class="fragment" -->
 To begin, double-click a web browser (GitBash, Terminal) icon...  <!-- .element: class="fragment" -->
 with your mouse <!-- .element: class="fragment" -->
 
----?title=slide title learning objectives
+---
 @title[Introduction - Learning Objectives]
+<title>HTML title in markdown</title>
 
 ### Learning Objectives
 
