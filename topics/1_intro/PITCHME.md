@@ -9,8 +9,8 @@ To begin, double-click a web browser (GitBash, Terminal) icon...  <!-- .element:
 with your mouse <!-- .element: class="fragment" -->
 
 ---
+
 @title[Introduction - Learning Objectives]
-<title>HTML title in markdown</title>
 
 ### Learning Objectives
 
