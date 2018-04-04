@@ -1067,8 +1067,8 @@ Let's look on our git clone shelf...
 <----------------------------------------------------------------------------->
 <-----------------EXERCISE---------------------------------------------------->
 <----------------------------------------------------------------------------->
----?image=assets/orange_moon.jpg
-<p><span class="menu-title slide-title">Exercise:  IO pie command error</span></p>
+---?image=assets/orange_moon.jpg&title=Exercise:  I/O as title
+<p><span class="menu-title">Exercise:  IO pie command error</span></p>
 
 ## Exercise:  IO pie command error  
 
