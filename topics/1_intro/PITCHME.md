@@ -5,14 +5,18 @@
 
 Who needs a mouse when we have keys! <!-- .element: class="fragment" -->
 
+---
+@title[Introduction]
+<p><span class="slide-title">Introduction</span></p>
+
 To begin, double-click a web browser (GitBash, Terminal) icon...  <!-- .element: class="fragment" -->
 with your mouse <!-- .element: class="fragment" -->
 
----
+@fa[arrow-down]
 
++++?image=assets/bg_images/green_moon.jpg
 @title[Introduction - Learning Objectives]
-
-### Learning Objectives
+<p><span class="slide-title">Learning Objectives</span></p>
 
 - Understand how computers represent information |
 - Understand how to intercat with the computer using commands |
@@ -22,8 +26,7 @@ with your mouse <!-- .element: class="fragment" -->
 
 +++?image=assets/bg_images/green_moon.jpg&color=orange
 @title[Introduction - Assumptions]
-
-### Assumptions
+<p><span class="slide-title">Assumptions</span></p>
 
 - Laptop computer with internet access
 - Familiarity with GUIs (Windows, Mac OS)
@@ -33,10 +36,7 @@ with your mouse <!-- .element: class="fragment" -->
 
 +++?image=assets/bg_images/green_moon.jpg
 @title[Introduction - Interfaces]
-<p><span class="menu-title slide-title">HTML menu & slide title</span></p>
-This slide is using HTML fragments 
-
-## Interfaces
+<p><span class="slide-title">Interfaces</span></p>
 
 - GUI - graphical user interface
   - "windows" of work            <!-- .element: class="fragment" -->
@@ -48,20 +48,24 @@ This slide is using HTML fragments
   - keyboard input               <!-- .element: class="fragment" -->
   - efficient & myopic           <!-- .element: class="fragment" -->
 
-@fa[arrow-right]
-
-
 ---
-@title[Computer Intro - Components]
+@title[Computer Intro - Components] 
+<p><span class="slide-title">Computer Components</span></p>
 
 - Computers have hardware & software:
 ![computer hw sw](assets/path.jpg)
+
+
++++
+@title[Computer Intro - Features]
+<p><span class="slide-title">Computer Features</span></p>
 
 - They receive **input** & produce **output**:
 ![terminal IO kb chart](assets/path.jpg)
 
 +++
 @title[Computer Intro - Purpose]
+<p><span class="slide-title">Computer Purpose</span></p>
 
 Computers are built to help _process information_.  
 They only do what we _instruct_ them to do.  
@@ -73,38 +77,50 @@ They only do what we _instruct_ them to do.
 
 +++
 @title[Computer Intro - Information] 
-<p><span class="menu-title slide-title">How computers represent information</span></p>
+<p><span class="slide-title">How computers represent information</span></p>
 
 - To a computer, all information is either:
   - a **file** (stored data, static) |
   - a **process** (active instructions, dynamic) |
 
++++
+@title[Computer Intro - Instructions] 
+<p><span class="slide-title">How computers process information</span></p>
+
+- **Files** just sit there |
+- **Processes** do all the work |
+  - accept _input_ and provide _output_ | 
+  - "follow orders" | 
+
 Note:
 "Folders" are also files (more on this later)
 
 +++
-@title[How computers take orders]
-
-- **Files** just sit there 
-- **Processes** do all the work |
-  - they accept _input_ and provide _output_ |
+@title[Computer Intro - Orders]
+<p><span class="slide-title">How computers take orders</span></p>
 
 - Input can be: |
   - "stuff we're typing right now" (live stream) |
   - "stuff we typed a while ago" (a file) |
-  
+- How do we give computers information to process? |
+
+@fa[arrow-down]
+
 +++
-@title[Computer Intro - Input]
+@title[Computer Intro - Input, live]
+<p><span class="slide-title">Computer Input - live</span></p>
 
-### Computer Input 
-
-- How do we give computers information to process? 
 > live input:  typing, mousing 
 > ![keyboard, mouse](assets/path.jpg)
 
+@fa[arrow-down]
+
++++
+@title[Computer Intro - Input, stored]
+<p><span class="slide-title">Computer Input - stored</span></p>
+
 > stored input:  finding files on a disc 
 > ![files](assets/path.jpg)
-
 
 +++
 @title[Comuter Intro - Processing]
@@ -976,7 +992,8 @@ $ which ls
 
 ### Navigating a pantry 
 
-Let's look on our git clone shelf...
+Let's look on our git clone shelf,  
+with assistance from Headwaiter Bash 
 
 <----------------------------------------------------------------------------->
 <-----------------EXERCISE---------------------------------------------------->
@@ -1068,8 +1085,8 @@ Let's look on our git clone shelf...
 <----------------------------------------------------------------------------->
 <-----------------EXERCISE---------------------------------------------------->
 <----------------------------------------------------------------------------->
----?image=assets/orange_moon.jpg&title=Exercise:  I/O as title
-<p><span class="menu-title">Exercise:  IO pie command error</span></p>
+---?image=assets/orange_moon.jpg
+<p><span class="menu-title slide-title">Exercise:  IO pie command error</span></p>
 
 ## Exercise:  IO pie command error  
 
@@ -1080,14 +1097,17 @@ Let's look on our git clone shelf...
 [username @ hostname pie](master)$ pie.sh
 bash: pie.sh: command not found...
 ```
++++?image=assets/orange_moon.jpg
+
+Bash did not accept `pie.sh` as input.
 
 > But we know this is a shell script!
-> How can we tell Robot Kitchen? 
+> How can we tell Robot Kitchen to create a pie process? 
 
 ---?image=assets/orange_moon.jpg
 <p><span class="menu-title slide-title"> Exercise: IO pie bash output</span></p>
 
-### use bash command & input file 
+### use bash command to create process 
 
 ```bash
 [username @ hostname pie](master)$ bash pie.sh
@@ -1161,7 +1181,114 @@ for receiving _**input**_ and sending _**output**_
 ---
 @title[How computers organise information]
 
-## Git branch
+### Git branch prompt brief
+ 
+> branch parenthesis 
+> checkout commands 
+
+<----------------------------------------------------------------------------->
+<-----------------EXERCISE---------------------------------------------------->
+<----------------------------------------------------------------------------->
+---?image=assets/orange_moon.jpg
+<p><span class="menu-title slide-title">Exercise:  git checkout branch </span></p>
+
+## Terminal - git checkout branch 
+- git checkout cdc-data 
+
+<----------------------------------------------------------------------------->
+---
+@title[Git prompt overview]
+
+### Git prompt overview  
+
+
+<----------------------------------------------------------------------------->
+<-----------------EXERCISE---------------------------------------------------->
+<----------------------------------------------------------------------------->
+---?image=assets/orange_moon.jpg
+<p><span class="menu-title slide-title">Exercise:  move files</span></p>
+
+## Terminal - move exercises 
+- cd cdc-data
+- ls 
+- mv some files to better directories  
+
+<----------------------------------------------------------------------------->
+
+---
+@title[How computers represent information]
+
+### Shelf is a lie/metaphor 
+
+Technically, the "shelf" is a lie... _metaphor_!
+![cake on a shelf in a pantry](assets/path.jpg)
+
+
++++
+@title[How computers represent information]
+
+- The pantry speaks binary, like Chef Kernel.
+
+"pantry shelves" (directories) &  
+"ingredient containers" (files) 
+
+...are abstractions we use to navigate computer data.
+
++++
+@title[How computers represent information]
+
+### Salt granules in containers 
+
+- All ingredients are diced & mixed together in the pantry 
+![salt container on a shelf](assets/path.jpg)
+
+![pantry with sand art in it](assets/path.jpg)
+
+Each granule contains some data.
+
++++
+@title[How computers represent information]
+
+- The "salt" container on our shelf maps to each salt granule in the pile.
+- One of these granules contains metadata about the container   
+- Why? 
+  - So we aren't restricted by “shelf” or “container” size 
+  - So we can have a pantry full of salt, if we want   
+
+---
+@title[How computers organise information]
+
+### Linked Lists, Git 
+
+> node concepts 
+> like git branch checkout 
+> file system 
+
+<----------------------------------------------------------------------------->
+<-----------------DEFINITIONS------------------------------------------------->
+<----------------------------------------------------------------------------->
+---?image=assets/green_moon.jpg
+<p><span class="menu-title slide-title">Definitions - File System, logical</span></p>
+
+> Definitions
+>> File System details 
+
+**File system** (logical) -- hierarchy of directories 
+**Directory** (folder) -- collection of files 
+**Path** -- location of file(s)
+
+---?image=assets/green_moon.jpg
+<p><span class="menu-title slide-title">Definitions - File System, structural</span></p>
+
+**File system** (structural) -- type of data structures used to store information 
+**Metadata** -- data that describes other data 
+**Block** -- group of sectors on a hard disc 
+**Sector** -- group of bytes (usually 512 bytes), minimum addressable unit of storage 
+**Byte** -- unit of digital information (usually 8 bits, "octet") 
+**Bit** -- binary digit, 0 or 1
+
+---
+@title[Headwaiter Bash's environment]
 
 
 <----------------------------------------------------------------------------->
@@ -1208,10 +1335,7 @@ for receiving _**input**_ and sending _**output**_
 #### Size 4 Headers
 #### Will likely be smaller than regular fonts 
 
+Check by theme 
+
 <br>
-
-The *same syntax* you use to create project  
-**READMEs** and **Wikis** for your Git repos.
-
----
 
