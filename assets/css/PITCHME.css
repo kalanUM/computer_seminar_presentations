@@ -86,7 +86,7 @@ body {
 /*********************************************
  * OTHER
  *********************************************/
-.reveal slide-title {
+.reveal .slide-title {
   font-weight: bold; 
   text-align: left; }
 
