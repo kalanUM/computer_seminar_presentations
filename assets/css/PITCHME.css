@@ -4,6 +4,7 @@
  * set body background colours 
  * set reveal text colours 
  * remove image borders (simple theme has img.plain)
+ * add bold slide-title class 
  ******************************************/
 
 
@@ -85,6 +86,10 @@ body {
 /*********************************************
  * OTHER
  *********************************************/
+.reveal slide-title {
+  font-weight: bold; 
+  text-align: left; }
+
 .reveal p {
   margin: 20px 0;
   line-height: 1.3; }
