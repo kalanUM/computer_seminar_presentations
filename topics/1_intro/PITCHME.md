@@ -19,7 +19,7 @@ with your mouse <!-- .element: class="fragment" -->
 <p><span class="slide-title">Learning Objectives</span></p>
 
 - Understand how computers represent information |
-- Understand how to intercat with the computer using commands |
+- Understand how to interact with the computer using commands |
 - Understand how to organise your digital work in directories |
 
 @fa[arrow-down]
@@ -30,10 +30,14 @@ with your mouse <!-- .element: class="fragment" -->
 
 - Laptop computer with internet access
 - Familiarity with GUIs (Windows, Mac OS)
-- Terminal emulator program 
+- Terminal emulator program installed 
   - Terminal on Mac OS
   - GitBash on Windows
+- Git program installed (by default on most Macs, comes with GitBash for Windows)
 
+  
+[comment]: # (the image color directive does nothing here - the slide bg image is 1x1px and fills the frame)  
+  
 +++?image=assets/bg_images/green_moon.jpg
 @title[Introduction - Interfaces]
 <p><span class="slide-title">Interfaces</span></p>
@@ -47,6 +51,8 @@ with your mouse <!-- .element: class="fragment" -->
   - "lines" of work              <!-- .element: class="fragment" -->
   - keyboard input               <!-- .element: class="fragment" -->
   - efficient & myopic           <!-- .element: class="fragment" -->
+
+[comment]: # (this slide seems to fit vertically - 12 H including Title and Breaks)  
 
 ---
 @title[Computer Intro - Components] 
@@ -68,12 +74,20 @@ with your mouse <!-- .element: class="fragment" -->
 <p><span class="slide-title">Computer Purpose</span></p>
 
 Computers are built to help _process information_.  
-They only do what we _instruct_ them to do.  
+They only dish out what we _instruct_ them to.  
+
+@fa[arrow-down]
+
++++
+@title[Computer Intro - Abilities]
+<p><span class="slide-title">Computer Abilities</span></p>
 
 - Computers: 
   - accept instructions |
   - store & access information |
   - perform calculations & tasks |
+  
+That's it.  <!-- .element: class="fragment" -->
 
 +++
 @title[Computer Intro - Information] 
@@ -83,17 +97,18 @@ They only do what we _instruct_ them to do.
   - a **file** (stored data, static) |
   - a **process** (active instructions, dynamic) |
 
+Note:
+"Folders" are also files (more on this later)
+  
 +++
 @title[Computer Intro - Instructions] 
 <p><span class="slide-title">How computers process information</span></p>
 
 - **Files** just sit there |
 - **Processes** do all the work |
-  - accept _input_ and provide _output_ | 
   - "follow orders" | 
-
-Note:
-"Folders" are also files (more on this later)
+  - accept _input_ 
+  - provide _output_ | 
 
 +++
 @title[Computer Intro - Orders]
@@ -102,7 +117,8 @@ Note:
 - Input can be: |
   - "stuff we're typing right now" (live stream) |
   - "stuff we typed a while ago" (a file) |
-- How do we give computers information to process? |
+
+> How do we give them orders?   <!-- .element: class="fragment" -->
 
 @fa[arrow-down]
 
@@ -122,39 +138,17 @@ Note:
 > stored input:  finding files on a disc 
 > ![files](assets/path.jpg)
 
-+++
-@title[Comuter Intro - Processing]
-
-### Computer Information Processing
-
-Once we've got some digital information...
-
-- How do we tell the computer to _process_ our information? |
-  - with _special directives_ called **commands** |
-  
-> commands are like **orders** for a computer 
-
-
-+++ 
-@title[Comuter Intro - Programs]
-
-- How _does_ it process our information? |
-  - by following _special instructions_ called **programs** |
-  
-> programs are like **recipes** for a computer  
-
 <----------------------------------------------------------------------------->
 <-----------------EXERCISE---------------------------------------------------->
 <----------------------------------------------------------------------------->
 ---?image=assets/orange_moon.jpg
-@title[Exercise:  make an order ]
-## Exercise:  make an order, GUI
-### (open a web browser)
+@title[Exercise:  Open a web browser]
+## Exercise:  Open a web browser 
+### using live & stored inputs 
 
-- Visit a website:
-  - open a web browser (launch a process)
-  - visit seminar GitHub 
-  - log in, if you have an account
+- mouse to a shortcut icon & click it (live) 
+- activate a browser program (stored) 
+- launch a web browser process (live) 
 
 @fa[arrow-down]
 <----------------------------------------------------------------------------->
@@ -166,12 +160,54 @@ Once we've got some digital information...
 
 - "Open a web browser"
   - Navigation (IO):  mouse to icon |
-  - Order (input):  mouse double-click |
-  - Recipe (output):  launch a web browser |
+  - Order (input):  mouse click |
+  - Recipe (IO):  web browser program |
+  - Dish (output):  web browser page | 
+
++++
+@title[Computer Intro - Processing]
+
+### Computer Information Processing
+
+- How did we **really** tell the computer to _process_ our inputs? |
+  - with _special directives_ called **commands** |
+  
+> commands are like **orders** for a computer 
+
++++ 
+@title[Computer Intro - Programs]
+
+- How _does_ the computer process our information? |
+  - by following _special instructions_ called **programs** |
+  
+> programs are like **recipes** for a computer  
+
+<----------------------------------------------------------------------------->
+<-----------------EXERCISE---------------------------------------------------->
+<----------------------------------------------------------------------------->
+---?image=assets/orange_moon.jpg
+@title[Exercise:  make an order ]
+## Exercise:  make an order, GUI
+### Visit the GitHub website:
+
+  - open a new tab 
+  - visit seminar GitHub 
+  - look at some files 
+  - (log in, if you have an account)
+
+@fa[arrow-down]
+<----------------------------------------------------------------------------->
+
++++
+@title[Orders:  Behind the scenes]
+
+### GUI orders, behind the scenes:
+
 - "Visit a website & log in" |
   - Navigation (IO):  mouse to address bar, login fields |
   - Orders (input):  keyboard & mouse clicks |
-  - Recipes (output):  display website in browser, send text to website |
+  - Recipes (IO):  browser tab program, send text to internet |
+  - Dish (output):  display website, display results |
 
 ---
 @title[Robot Kitchen to the rescue]
@@ -281,7 +317,7 @@ Let's push some (GUI) buttons!
   - format:  stored (file on disc) |
   - language:  Bash (sh) |
   - type:  interpreted |
-- With your hands, use your (active) **mouse** recipe
+- With your hands, use your (active) **mouse** process 
   - format:  live (user input, active instructions) |
   - language:  your OS suite (likely C) |
   - type:  compiled |
@@ -295,7 +331,7 @@ Let's push some (GUI) buttons!
 
 - In general, recipes can be:
   - live or stored ![input devices, commands](assets/path.jpg)
-  - yours or someone else's ![mouse clics, OS](assets/path.jpg)
+  - yours or someone else's ![mouse clicks, OS](assets/path.jpg)
   - direct or indirect ![in machine language, needs interpretation](assets/path.jpg)
 
 @fa[arrow-down]
@@ -309,10 +345,10 @@ Live instructions
 ## Interpreted recipes 
 
 Indirect (_interpreted_):  recipes like shell scripts
-- The **program file** is in "human" language
+- the **program file** is in "human" language
   - Robot Kitchen staff has an interpreter
-  - Each instruction is converted into machine language **live**
-  - There is only 1 file, yay!
+  - each instruction is converted into machine language **live**
+  - there is only 1 file, yay!
 
 @fa[arrow-down]
 
@@ -322,10 +358,10 @@ Indirect (_interpreted_):  recipes like shell scripts
 ## Compiled recipes 
 
 Direct (_compiled_):  recipes like your web browser, C code
-- The **program file** is in machine language
+- the **program file** is in machine language
   - Robot Kitchen staff doesn't have an interpreter
-  - All instructions must be translated into machine language first 
-  - There are two files:  
+  - all instructions must be translated into machine language first 
+  - there are two files:  
   'source code' (our recipe) &  
   'compiled code' (Robot Kitchen's recipe)
 
@@ -364,12 +400,17 @@ _Everything we can do graphically, we can also do with the keyboard:_
 - launch Terminal or GitBash 
   - look at the Headwaiter's prompt 
   - (we'll come back to this in a moment) 
+
+---?image=assets/orange_moon.jpg
+@title[Exercise:  make some orders)]
+
+## Exercise:  make some orders 
   
 - send some orders to Robot Headwaiter
   - `who` is logged in 
-  - `ps` _what_ recipes this Headwaiter is making 
+  - `ps` _what_ else this Headwaiter is doing 
   - `pwd` _where_ you are in the kitchen pantry
-  - `ls` other items _here_ on this shelf 
+  - `ls` _list_ any other items on this shelf 
 
 @fa[arrow-down]
 
@@ -414,16 +455,14 @@ _Everything we can do graphically, we can also do with the keyboard:_
 - Robot Kitchen staff know about some basic recipes
   - ![system programs image](assets/path.jpg)
 - We can provide custom recipes (which we will!)
-  - ![pie.sh screenshot](assets/path.jpg)
+  - ![pie.sh screencap](assets/path.jpg)
 
 
 <----------------------------------------------------------------------------->
 <-----------------DEFINITIONS------------------------------------------------->
 <----------------------------------------------------------------------------->
----?image=assets/green_moon.jpg
+---?image=assets/bg_images/green_moon.jpg
 <p><span class="menu-title slide-title">Definitions - Computer terms</span></p>
-
-## Definitions - Computer terms 
 
 - **Program** -- set of instructions for a computer to follow
 - **Operating System** -- programs that work together to manage computer resources
@@ -510,13 +549,21 @@ What follows your orders?
 ## Exercise:  use a Headwaiter to check google.com  
 
 - Tab into Terminal or GitBash
-- make a ping order: 
+- make a `ping` order: 
   - `ping google.com` to check if Headwaiter Shell can reach Google 
   - `CTRL-C` (Windows & Linux) or `CMD-C` (Mac) to quit active process 
-- time your ping order:
+
+---?image=assets/orange_moon.jpg
+@title[Exercise:  time an order)]
+
+## Exercise:  use a Headwaiter to time an order   
+
+- `time` your `ping` order:
   - `time ping google.com` 
   - `CTRL-C` or `CMD-C` to quit active process
-  - examine _real_, _user_ (CPU), and _sys_ (CPU) time values 
+- examine _real_, _user_ (CPU), and _sys_ (CPU) time values 
+
+What keeps track of this information?
   
 @fa[arrow-right]
 <-----------------EXERCISE---------------------------------------------------->
@@ -537,7 +584,7 @@ What follows your orders?
 <----------------------------------------------------------------------------->
 <-----------------DEFINITIONS------------------------------------------------->
 <----------------------------------------------------------------------------->
-+++?image=assets/green_moon.jpg
++++?image=assets/bg_images/green_moon.jpg
 <p><span class="menu-title slide-title">Operating System Components</span></p>
 
 ## OS Components - Kernel 
@@ -546,7 +593,7 @@ What follows your orders?
   - core component of an operating system
   - responsible for resource management & program execution
 
-+++?image=assets/green_moon.jpg
++++?image=assets/bg_images/green_moon.jpg
 <p><span class="menu-title slide-title">Operating System Components</span></p>
 ## OS Components - Shell 
   
@@ -554,7 +601,7 @@ What follows your orders?
   - interfaces with the **kernel**
   - interprets user commands
 
-+++?image=assets/green_moon.jpg
++++?image=assets/bg_images/green_moon.jpg
 <p><span class="menu-title slide-title">Operating System Components</span></p>
 ## OS Components - System Programs 
 
@@ -631,13 +678,14 @@ When your order comes in from Headwaiter Shell, Chef Kernel delegates some work 
 - Tab back to web browser 
 - Get pie recipe from a web browser:
   - From GitHub 
-  - Download pie.sh
+  - Download `pie.sh`
 
 @fa[arrow-down]
 <----------------------------------------------------------------------------->
 
 +++
 @title[How computers take orders]
+How computers take orders
 
 - What happened behind the web browser scenes? 
   - some **orders** & **recipes** 
@@ -646,6 +694,7 @@ When your order comes in from Headwaiter Shell, Chef Kernel delegates some work 
 
 +++
 @title[How computers take orders]
+<p><span class="menu-title slide-title">How computers take orders GUI delivery</span></p>
 
 ## Third-party GUI delivery service
 
@@ -665,6 +714,10 @@ When your order comes in from Headwaiter Shell, Chef Kernel delegates some work 
 - Browser GUI notifies us:
 >`pie.sh` is now in your pantry!
 
+@fa[arrow-down]
+
++++
+@title[How computers organise information]
 
 - Where did our file go?
 > _onto a shelf_ (in the pantry) 
@@ -679,9 +732,9 @@ When your order comes in from Headwaiter Shell, Chef Kernel delegates some work 
 
 ## Exercise:  GUI, find pie.sh
 
-- open GUI pantry doors:  Finder on Mac, Explorer on Windows
-- mouse navigate to your Downloads shelf 
-- find `pie.sh` 
+- open GUI pantry doors:  `Finder` on Mac, `Explorer` on Windows
+- mouse navigate, probably to your `Downloads` shelf 
+- find `pie.sh` file 
 
 @fa[arrow-down]
 <----------------------------------------------------------------------------->
@@ -801,7 +854,7 @@ recall our `who, ls, pwd` from earlier...
 <----------------------------------------------------------------------------->
 <-----------------DEFINITIONS------------------------------------------------->
 <----------------------------------------------------------------------------->
-+++?image=assets/green_moon.jpg
++++?image=assets/bg_images/green_moon.jpg
 <p><span class="menu-title slide-title">CLI Components</span></p>
 
 ## CLI Components 
@@ -857,11 +910,12 @@ Wed Mar 14 11:50:33 EDT 2018
 +++
 @title[How computers represent information] 
 
-### Now, to order our meal...
+### Order a meal...
 
-Let's add pie.sh to the pantry using a **command**
+- Let's download pie.sh to the pantry using a **command**
   - many recipes can get information from the internet 
-  - we'll use `git` 
+  - we want to use a `git` recipe 
+  - we'll use a `git` **command** to tell Bash 
   
 First, make sure we're home:
 ```bash
@@ -869,40 +923,48 @@ First, make sure we're home:
 [username @ hostname ~]$ 
 ```
 
+Note:
+Bash tilde shortcut for home 
+
+
 <----------------------------------------------------------------------------->
 <-----------------EXERCISE---------------------------------------------------->
 <----------------------------------------------------------------------------->
 ---?image=assets/orange_moon.jpg
-<p><span class="menu-title slide-title">Exercise:  git the workshop files</span></p>
-
-## Exercise:  git the workshop files 
+<p><span class="menu-title slide-title">Exercise:  git the meal (workshop files)</span></p>
 ### order from Headwaiter Bash
 
-```bash
-[username @ hostname ~]$ git clone https://github.com/ccs-training/linux-for-research.git
-```
-  - the `git` **command** tells Bash we want to use git 
-  - the `git clone` command downloads the contents of a remote repository 
-
----?image=assets/orange_moon.jpg
-<p><span class="menu-title slide-title">Exercise:  check ingredients</span></p>
-
-## Exercise:  check git repo ingredients 
-
-```bash
-[username @ hostname ~]$ ls linux-for-research
-```
-- our new git shelf has these ingredients (including a pie shelf!) 
-- let's ask the Headwaiter what shelf we're on:
+- ask the Headwaiter what shelf we're on (should be home) 
+- order a `git` recipe  
+- `git clone` downloads the contents of a remote repository 
 
 ```bash
 [username @ hostname ~]$ pwd 
+/home/username
+[username @ hostname ~]$ git clone https://github.com/ccs-training/linux-for-research.git
 ```
+
+---?image=assets/orange_moon.jpg
+<p><span class="menu-title slide-title">Exercise:  list git repo ingredients</span></p>
+
+```bash
+[username @ hostname ~]$ ls
+..
+linux-for-research
+..
+[username @ hostname ~]$ ls linux-for-research
+..
+pie.sh
+..
+```
+- our new git shelf has some ingredients, including `pie.sh`!
+
 <----------------------------------------------------------------------------->
+
 ---
 @title[How computers organise information]
 
-## How did Headwaiter Bash find our commands?
+## How did Headwaiter Bash find our `git clone` and `ls` commands?
 
 - Each shell has a special _menu_
 - we can use the **which** command to locate other commands 
@@ -942,7 +1004,7 @@ Similar to Bash's order menu:
 @title[How computers organise information]
 
 ```bash
-$ which ls
+[username @ hostname ~]$ which ls
 /usr/bin/ls
 ```
 
@@ -970,14 +1032,28 @@ $ which ls
 
 ![Linux & Windows](assets/path.jpg)
 
+<----------------------------------------------------------------------------->
+<-----------------EXERCISE---------------------------------------------------->
+<----------------------------------------------------------------------------->
+---?image=assets/orange_moon.jpg
+<p><span class="menu-title slide-title">Exercise:  find Bash's recipe shelf</span></p>
+
+### Exercise:  find Bash's recipe shelf
+
+```bash
+[username @ hostname ~]$ which bash
+/usr/bin/bash
+```
+<----------------------------------------------------------------------------->
+
 
 <----------------------------------------------------------------------------->
 <-----------------DEFINITIONS------------------------------------------------->
 <----------------------------------------------------------------------------->
-+++?image=assets/green_moon.jpg
++++?image=assets/bg_images/green_moon.jpg
 <p><span class="menu-title slide-title">File System Definitions</span></p>
 
-## File System definitions  
+### File System definitions  
 
 - **File system** (logical) -- hierarchy of directories
 - **Directory** (folder) -- collection of files
@@ -992,16 +1068,16 @@ $ which ls
 
 ### Navigating a pantry 
 
-Let's look on our git clone shelf,  
+Let's look on our git shelf,  
 with assistance from Headwaiter Bash 
 
 <----------------------------------------------------------------------------->
 <-----------------EXERCISE---------------------------------------------------->
 <----------------------------------------------------------------------------->
 ---?image=assets/orange_moon.jpg
-<p><span class="menu-title slide-title">Exercise:  navigate to workshop git shelf</span></p>
+<p><span class="menu-title slide-title">Exercise:  navigate to git shelf</span></p>
 
-## Exercise:  navigate to workshop git shelf
+## Exercise:  navigate to `git` shelf
 
 ```bash
 [username @ hostname ~]$ cd linux-for-research
@@ -1012,22 +1088,19 @@ with assistance from Headwaiter Bash
 ---
 @title[How computers represent information]
 
-### Bash shell prompt with git 
+### Bash shell prompt with `git` 
 
 - on a git shelf, the Bash prompt also shows your git branch 
-- _branches_ in git are names for versions 
+- _branches_ in git are names for versions (or nodes) 
 - `ls -l` for long format item list 
-
-
+- `git status` for local git repository information 
 
 
 <----------------------------------------------------------------------------->
 <-----------------DEFINITIONS------------------------------------------------->
 <----------------------------------------------------------------------------->
-+++?image=assets/green_moon.jpg
++++?image=assets/bg_images/green_moon.jpg
 <p><span class="menu-title slide-title">Command Anatomy</span></p>
-
-## Command Anatomy 
 
 > command -parameter(s) argument(s)
 
@@ -1043,16 +1116,17 @@ with assistance from Headwaiter Bash
 ---
 @title[How computers take orders]
 
-## IO intro 
+### IO streams intro 
 
 - We provide _input_ to make _orders_: 
   - keyboard (live input, device) 
   - file (stored input)
 
 - Headwaiter Bash streams any results (& errors) as _output_: 
-  - screen or terminal window (interactive shells) 
-  - (redirected to) another process or file (batch shells) 
+  - screen or terminal window, for interactive shells 
+  - (redirected to) another process or file, for batch shells 
 
+For example, help with commands 
 
 <----------------------------------------------------------------------------->
 <-----------------EXERCISE---------------------------------------------------->
@@ -1060,13 +1134,11 @@ with assistance from Headwaiter Bash
 ---?image=assets/orange_moon.jpg
 <p><span class="menu-title slide-title">Exercise:  command --help</span></p>
 
-## Exercise:  command --help  
-
 ```bash
 [username @ hostname lfr](master)$ ls --help
 ```
 - **ls --help** for GitBash (Windows) 
-- **man ls** for Linux & Mac 
+- **man ls** for Linux & Mac "manual pages" 
 - `q` to quit pagers 
 
 <----------------------------------------------------------------------------->
@@ -1079,38 +1151,53 @@ with assistance from Headwaiter Bash
   - **output**, for information generated by the process
   - **error**, for diagnostic messages generated by the process
   
-- These concepts generally apply to other Operating Systems like Windows
-
+- These concepts apply to other Operating Systems like Windows
+- Let's see an error...
 
 <----------------------------------------------------------------------------->
 <-----------------EXERCISE---------------------------------------------------->
 <----------------------------------------------------------------------------->
 ---?image=assets/orange_moon.jpg
-<p><span class="menu-title slide-title">Exercise:  IO pie command error</span></p>
+<p><span class="menu-title slide-title">Exercise:  IO command error</span></p>
 
-## Exercise:  IO pie command error  
+### Exercise:  try to order pie 
 
 ```bash
-[username @ hostname lfr](master)$ cd pie
-[username @ hostname pie](master)$ ls 
-..
-[username @ hostname pie](master)$ pie.sh
+[username @ hostname lfr](master)$ pie
+bash: pie: command not found...
+[username @ hostname lfr](master)$ pie.sh
 bash: pie.sh: command not found...
 ```
+@fa[arrow-down]
+
+<----------------------------------------------------------------------------->
++++
+@title[How computers take orders]
+
+Our Headwaiter Bash says `pie.sh` isn't on the menu.  
+But we know this is a shell script.  
+
+Let's order Bash to execute `pie.sh` anyway.  We can use: 
+
+- the _absolute path_ (`/home/username/linux-for-research/pie.sh`)
+- the Bash "dot" shorthand path (`./pie.sh`)  
+- the Bash **command** & a _relative path_ (`bash pie.sh`) 
+
+@fa[arrow-down] 
+
+Note:
+dot for 'current directory', like ~ for 'home directory' 
+
+<----------------------------------------------------------------------------->
+<-----------------EXERCISE---------------------------------------------------->
+<----------------------------------------------------------------------------->
 +++?image=assets/orange_moon.jpg
+<p><span class="menu-title slide-title">Exercise:  borrow Bash</span></p>
 
-Bash did not accept `pie.sh` as input.
-
-> But we know this is a shell script!
-> How can we tell Robot Kitchen to create a pie process? 
-
----?image=assets/orange_moon.jpg
-<p><span class="menu-title slide-title"> Exercise: IO pie bash output</span></p>
-
-### use bash command to create process 
+### Give pie recipe to another Bash (as input)  
 
 ```bash
-[username @ hostname pie](master)$ bash pie.sh
+[username @ hostname lfr](master)$ bash pie.sh
              (
               )
          __,.---.,__
@@ -1119,6 +1206,60 @@ Bash did not accept `pie.sh` as input.
      \.,_____________,./ 
 
 ```
++++?image=assets/orange_moon.jpg
+<p><span class="menu-title slide-title">Exercise:  use path</span></p>
+
+### Use Bash dot-shortcut to order pie.sh 
+
+similar to using the _absolute path_ (less typing) 
+
+```bash
+[username @ hostname lfr](master)$ ./pie.sh
+             (
+              )
+         __,.---.,__
+     ,-='  /  |  \  '=-.
+    :--.,___________,.--;
+     \.,_____________,./ 
+
+```
+
+<----------------------------------------------------------------------------->
+
++++
+@title[How computers take orders]
+
+What happened?  In both exercises, 
+- another Bash process accepted _input_:  `pie.sh` 
+- sub-shell Bash followed the recipe
+- sub-shell Bash _output_ pie (& exited) 
+
+Bash also has a **source** built-in command, which execute scripts directly (without a sub-shell).
+
+<----------------------------------------------------------------------------->
+<-----------------EXERCISE---------------------------------------------------->
+<----------------------------------------------------------------------------->
++++?image=assets/orange_moon.jpg
+<p><span class="menu-title slide-title">Exercise:  source Bash scripts (import)</span></p>
+
+### Source (import) script contents 
+
+execute the contents of a script _in the current Bash_ 
+
+```bash
+[username @ hostname lfr](master)$ source pie.sh
+             (
+              )
+         __,.---.,__
+     ,-='  /  |  \  '=-.
+    :--.,___________,.--;
+     \.,_____________,./ 
+
+```
+
+Pie output is the same.  Functionally, sourcing uses just one Bash process. 
+Sourcing (importing) will be important for scripting. 
+
 <----------------------------------------------------------------------------->
 
 ---
@@ -1133,44 +1274,39 @@ for receiving _**input**_ and sending _**output**_
 - **stdout** -- standard output data stream, for results 
   - screen or terminal window (interactive) 
 - **stderr** -- standard error data stream, for warnings & diagnostic messages
-  - also screen or terminal window (interactive)
+  - also screen or terminal window (interactive) 
 
+---
+@title[How computers represent information]
+
+While Bash can _order_ a copy of itself, it can't _execute_ it's own recipe. 
 
 <----------------------------------------------------------------------------->
 <-----------------EXERCISE---------------------------------------------------->
 <----------------------------------------------------------------------------->
----?image=assets/orange_moon.jpg
-<p><span class="menu-title slide-title">Exercise:  view processes</span></p>
++++?image=assets/orange_moon.jpg
+<p><span class="menu-title slide-title">Exercise:  bash binary error</span></p>
 
-## Exercise:  view processes 
-
-```bash
-[username @ hostname ~]$ ps
-```
-- this shows a snapshot of current processes in your shell (including the shell process)
-- the recipe for **ps** lives somewhere in our pantry (hard disc)
-- where?
+###  Bash cannot follow binary recipes 
 
 ```bash
-[username @ hostname ~]$ which ps
-/usr/bin/ps
+[username @ hostname lfr](master)$ bash bash
+/usr/bin/bash: /usr/bin/bash: cannot execute binary file 
 ```
+- recall that binary files are **direct** or **compiled** (like C code) 
+- `/usr/bin/bash` is in machine-language, which Bash cannot read 
+
 <----------------------------------------------------------------------------->
-
----
-@title[How computers organise information]
 
 
 <----------------------------------------------------------------------------->
 <-----------------DEFINITIONS------------------------------------------------->
 <----------------------------------------------------------------------------->
-+++?image=assets/green_moon.jpg
++++?image=assets/bg_images/green_moon.jpg
 <p><span class="menu-title slide-title">Navigation Commands</span></p>
 
-## Navigation Commands 
-
 - **pwd** -- print working directory
-  - where we are in the pantry (what shelf) 
+  - where we are in the pantry (which shelf) 
 - **ls** -- list directory contents (`ls -l` long format)
   - what items are on a shelf 
 - **cd** -- change directory (`cd ~` to go home) 
@@ -1267,7 +1403,7 @@ Each granule contains some data.
 <----------------------------------------------------------------------------->
 <-----------------DEFINITIONS------------------------------------------------->
 <----------------------------------------------------------------------------->
----?image=assets/green_moon.jpg
+---?image=assets/bg_images/green_moon.jpg
 <p><span class="menu-title slide-title">Definitions - File System, logical</span></p>
 
 > Definitions
@@ -1277,7 +1413,7 @@ Each granule contains some data.
 **Directory** (folder) -- collection of files 
 **Path** -- location of file(s)
 
----?image=assets/green_moon.jpg
+---?image=assets/bg_images/green_moon.jpg
 <p><span class="menu-title slide-title">Definitions - File System, structural</span></p>
 
 **File system** (structural) -- type of data structures used to store information 
@@ -1287,55 +1423,24 @@ Each granule contains some data.
 **Byte** -- unit of digital information (usually 8 bits, "octet") 
 **Bit** -- binary digit, 0 or 1
 
----
-@title[Headwaiter Bash's environment]
+<----------------------------------------------------------------------------->
+
+
 
 
 <----------------------------------------------------------------------------->
 <-----------------EXERCISE---------------------------------------------------->
 <----------------------------------------------------------------------------->
 ---?image=assets/orange_moon.jpg
-<p><span class="menu-title slide-title">Exercise:  locate menu items</span></p>
+<p><span class="menu-title slide-title">Exercise:  check shelf</span></p>
 
-## Exercise:  locate menu items 
+## Exercise:  check shelf 
 
 ```bash
-[username @ hostname ~]$ which pwd
-/usr/bin/pwd
+
 ```
-- **which** shows the recipe location for a menu item
-- (the _program file_ for a _command_) 
-- **whereis** shows the program & manual file (Linux & Mac only)
+
+[comment]: # (exercise slide)
 
 <----------------------------------------------------------------------------->
----
-@title[How computers organise information]
-
-
-
-
-
-
-
-
-
-<----------------------------------------------------------------------------->
-<-----------------NOTES------------------------------------------------------->
-<----------------------------------------------------------------------------->
-
-
----?code=path/to/source.file
-
-@[1](Code Fragmenter line number annotations)
-@[3](will be rendered on slide)
-@[5-7](under code fragment focus blocks)
-
----
-
-#### Size 4 Headers
-#### Will likely be smaller than regular fonts 
-
-Check by theme 
-
-<br>
 
