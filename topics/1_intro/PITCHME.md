@@ -1342,7 +1342,7 @@ In some filesystems, the salt container keeps a sequential list of **pointers** 
 In other filesystems, the salt container keeps a **pointer** to the first granule only.
 Each granule then keeps a **pointer** to the _next_ granule.
 
-Both are (usually) done "behind the scenes" -- all we users see is the file.
+Both are (usually) done "behind the scenes" -- all we users "see" is the file.
 
 
 
@@ -1873,11 +1873,11 @@ Note:
 
 **DELETE IS FOREVER**
 
-**File operations** performed by Waiter Bash are ***PERMANENT*** 
+**File operations** performed by Shells like Bash are ***PERMANENT*** 
 
 Robot Kitchen CLIs don't have "Recycle" or "Trash" bins.
 
-When you tell Waiter Shell to remove an item from the pantry,
+When you tell the Shell to remove an item from the pantry,
 **THAT ITEM IS GONE** 
 
 Note:
@@ -2312,11 +2312,11 @@ Note:
 
 ### File Operation Permanence Reminder
 
-**File operations** performed by Waiter Bash are ***permanent*** 
+**File operations** performed by Shells like Bash are ***permanent*** 
 
 Robot Kitchen CLIs don't have "Recycle" or "Trash" bins.
 
-When Waiter Shell moves an item off a shelf,  
+When the Shell moves an item off a shelf,  
 **THAT ITEM IS GONE FROM THAT SHELF** 
 
 ...and hopefully _on_ your target shelf
@@ -2335,14 +2335,13 @@ When Waiter Shell moves an item off a shelf,
   - `mkdir -p dir1/dir2/dir3` make all ancestors, as needed 
 - `rmdir` remove one or more directories (if empty) 
   - `rmdir -p dir1/dir2/dir3` remove all ancestors (if empty) 
-- `mv` relocate file(s), rename 1 file
+- `mv` relocate file(s); rename 1 file
 - `rm` remove file(s) only, not directories
-  - `rm -r <directory>` recursively remove all files _and parent directory_  
-- `cp` copy file(s) without renaming, copy 1 file & rename the copy  
+  - `rm -r <directory>` recursively remove all files _and parent directory_ 
+- `cp` copy file(s) without renaming; copy 1 file & rename the copy 
 
 Note:
-What about creating files?  
-Coming up next.
+What about creating files? 
 
 <-----------------DEFINITIONS------------------------------------------------->
 
@@ -2355,14 +2354,12 @@ Coming up next.
 
 Waiter Bash's `>` **operator** redirects _outputs_ to a file 
 
-We can use it to create an empty file, by redirecting an empty stream. 
-
-Using `echo`, we can redirect specific text. 
-
-And using `cat`, we can redirect (output from) a live stream.
+- We can use it to create an empty file, by redirecting an empty stream. 
+- Using `echo`, we can redirect specific text. 
+- And using `cat`, we can redirect (output from) a live stream.
 
 Note:
-`>` right angle bracket, greater-than sign 
+`>` right angle bracket, "greater-than" sign 
 
 
 
@@ -2384,7 +2381,7 @@ Note:
 [username @ hostname ~]$ cat > mylongnote.txt 
 A long note [ENTER]
 This input stream will be redirected into mylongnote.txt [ENTER]
-when we terminate the process [ENTER]
+when we terminate the process with CTRL-C [ENTER]
 [CTRL-C]
 [username @ hostname ~]$ ls my*
 myemptyfile.txt     mylongnote.txt    mynote.txt 
@@ -2404,7 +2401,7 @@ Note:
 
 - `>` redirect _output_ to a **file** (overwrite) 
   - `2>` redirect _error_ to a **file** (overwrite) 
-  - `>>` redirect _output_ (append)  
+  - `>>` redirect _output_ (append) 
   - `2>>` redirect _error_ (append) 
 - `|` pass _output_ of a command as _input_ to another command 
 - `<` redirect standard input _from a file_ 
@@ -2459,7 +2456,7 @@ Note:
 ### Bash's Notebook 
 
 - How does Bash keep track of this menu? 
-  -- with a personal notebook!
+  - with a personal notebook!
 
 @fa[arrow-down]
   
@@ -2504,6 +2501,8 @@ TERM=xterm-256color
 SHELL=/bin/bash
 HISTSIZE=1000
 ```
+
+Note:
 That's a lot!  Let's page through them with `less` 
 
 +++?image=assets/orange_moon.jpg
@@ -2512,8 +2511,14 @@ That's a lot!  Let's page through them with `less`
 ```bash
 $ printenv | less 
 
-[ENTER] to scroll by line
-[p] to scroll by page
+[ENTER or j, k] to scroll by line forward, backward
+
+[f, b] to scroll by page forward, backward
+
+[g, G] jump to start, end (of file) 
+
+[h] summary of less commands 
+
 [q] to quit pagers 
 ```
 
@@ -2523,12 +2528,12 @@ $ printenv | less
 ```bash
 $ printenv SHELL 
 /usr/bin/bash
-$ printenv OS PWD HOME HISTFILE
-CentOS7
-/home/username
+$ printenv USER HOME HISTFILE
+username
 /home/username 
 
 ```
+
 No results for HISTFILE.  It might not be an "environment" variable. 
 
 Note:
@@ -2542,7 +2547,9 @@ Recall that we can cycle through our most recent orders using the arrow keys.
 
 - Our order history must be somewhere in the pantry
 - `printenv` only prints Bash's _Key notes_ 
-- How else can we print a note?
+
+Note:
+How else can we print a note?
 
 ---
 @title[Waiter Bash's environment]
@@ -2561,8 +2568,8 @@ $ echo $HISTFILE
 The `$` special character tells Bash to use the _contents_ of the variable. 
 
 Note:
-`echo` can handle a variety of inputs; use `$` to tell echo we want _contents_ 
-`printenv` only handles variable names, so it already knows we want _contents_  
+`echo` accepts a variety of inputs; use `$` to tell echo we want _contents_ 
+`printenv` only accepts variable names, so it already knows we want _contents_ 
 
 ---
 @title[Waiter Bash's environment -- environment variables]
@@ -2584,32 +2591,66 @@ Note:
 ### Shell Variables
 #### personal notes, only this shell has a copy
 
-- $HISTFILE -– the location of your Bash command history file
+- $HISTFILE -- the location of your Bash command history file
   - only interactive Bash shells add to your order history
   - ..therefore only interactive Bash shells have this note
-- $BASH -– the location of this Bash's recipe
-- $DIRSTACK -– the list of directories used by dirs, pushd, and popd
-- $PPID -– the process ID of this Bash
+- $BASH -- the location of this Bash's recipe
+- $DIRSTACK -- the list of directories used by dirs, pushd, and popd
+- $PPID -- the process ID of this Bash
 
 `echo $HISTFILE` only 
 
+---
+@title[Waiter Bash's environment -- IFS]
+
+### IFS Shell Variable 
+#### Internal Field Separator
+
+- character(s) used as delimeters (for word separation)
+- default is the 3 "whitespace" chars: 
+  - `<space><tab><newline>` 
+
+Use `echo` & `cat`, or `printf`, to view 
+
+@fa[arrow-down]
+
++++?image=assets/orange_moon.jpg
+<p><span class="menu-title slide-title">Exercise:  IFS shell variable</span></p>
+
+```bash
+$ echo -n "$IFS" | cat -vte
+ ^I$
+```
+- `-n` remove `echo`'s newline (before piping to `cat`)
+- `-vte` 
+  - show non-printing chars (space) 
+  - show `^I` for tabs
+  - show `$` for end of line 
+
+```bash
+$ printf %q "$IFS"
+$' \t\n'
+```
+- `%q` print in POSIX $'' syntax 
 
 
+Note:
 
-
+<-----------------EXERCISE---------------------------------------------------->
 
 
 
 ---?image=assets/bg_images/green_moon.jpg
 <p><span class="menu-title slide-title">Definitions - Shell Environment</span></p>
 
-**Environment Variable** -- 
-**Shell Variable** -- 
-`export` -- 
-`printenv` -- 
-`echo $VARIABLE` -- 
+- **Environment Variable** -- 
+- **Shell Variable** -- 
+- `export MYVAR` -- make shell var _MYVAR_ an **Environment Variable** (send a copy to all subshells)
+  - `export -p` -- print list of global variables 
+- `printenv` -- 
+- `echo $VARIABLE` -- 
 
-`$` -- special character 
+- `$` -- special character, "value/contents of" 
 
 Note:
 <-----------------DEFINITIONS------------------------------------------------->
@@ -2665,6 +2706,24 @@ The topmost shell level may start at 2, depending on your system.
 
 
 
+
+---
+@title[Waiter Bash's environment -- command execution]
+
+### Command Execution 
+
+When Bash processes orders, Robot Kitchen executes `fork` & `exec` system calls.
+
+- `fork` starts a new process, by copying the current one
+- `exec` replaces old process contents with new process contents 
+
+During **command execution**, our Bash Copy is replaced by the _contents_ of the command's **program file**.
+
+For subshells (_Conga Bash_), our Bash Copy is replaced by a new Waiter Bash (with a clean personal notebook).
+
+Note:
+Recall that all Waiters receive copies of **Key notes** (environment variables) for their notebooks 
+
 ---
 @title[Waiter Bash's environment -- shell variables]
 
@@ -2674,6 +2733,7 @@ We can ask Bash to keep any note (as a _shell variable_):
 $ MYNOTE="this is my note"
 $ echo $MYNOTE
 this is my note
+
 $ printenv MYNOTE
 
 ```
@@ -2700,7 +2760,7 @@ Now `printenv` knows about this note, and subshells will get a copy.
 
 Shell & Environment Variables are not shared.
 
-If you change the value of MYNOTE, `export` it again to copy the new value to subshells.  
+If you change the value of MYNOTE, `export` it again to copy the new value to subshells. 
 
 
 ---
@@ -2760,3 +2820,103 @@ When we check which recipe an order will use, Bash:
 
 What if we have a recipe somewhere else in the pantry?
 - We can modify Bash's PATH note!
+
+### Bash profile mods section goes here 
+
+
++++?image=assets/bg_images/green_moon.jpg
+<p><span class="menu-title slide-title">File Operations</span></p>
+
+- `cat` output entire file(s) contents, sequentially 
+- `sort` output sorted contents of all file(s) 
+- `less` view (& search) file contents by page 
+- `head` output first 10 lines of file(s)
+  - `head -n X` output first X lines 
+- `tail` output last 10 lines of file(s)
+  - `tail -n X` output last X lines 
+
+- `wc` print line, word, & byte counts for each file(s) 
+
+
+Note:
+
+<-----------------DEFINITIONS------------------------------------------------->
+
+
+
+
+
++++?image=assets/bg_images/green_moon.jpg
+<p><span class="menu-title slide-title">Process Control</span></p>
+
+- `CTRL-Z` suspend current process 
+- `jobs -l` list active jobs & PIDs 
+- `bg` put suspended process in background 
+  - `bg %1` put first process in bg
+  - `bg %cat` put `cat` process in bg 
+- `fg` bring suspended process to foreground 
+  - `fg %1` bring first process to fg 
+  - `fg %cat` bring `cat` process to fg 
+- `kill PID` ask PID process to terminate itself 
+  - `kill -9 PID` terminate PID process 
+
+Note:
+
+<-----------------DEFINITIONS------------------------------------------------->
+
+
+
+
+
++++?image=assets/bg_images/green_moon.jpg
+<p><span class="menu-title slide-title">Special Parameters</span></p>
+
+- `echo $$` PID of current shell 
+- `echo $-` options set for current shell (`i` for interactive) 
+- `echo $0` shell script name
+- `echo $!` PID of last bg process
+- `echo $?` last fg exit status 
+(0 is nice) 
+(useful for arithmetic & expansion tests) 
+
++++?image=assets/bg_images/green_moon.jpg
+<p><span class="menu-title slide-title">Special Parameters</span></p>
+
+- `echo $@` all parameters, individually 
+- `echo $*` all parameters, together separated by IFS char 
+- `echo $1` first argument from last command 
+- `echo $_` last argument, or last command if no arguments
+- `echo $#` argument/parameter count from last command
+
+
++++?image=assets/bg_images/green_moon.jpg
+<p><span class="menu-title slide-title">Metacharacters & Substitutions</span></p>
+
+- `~` home
+- `*` file substitution; zero or more characters
+- `?` file substitution; one character
+- `[ ]` file substitution; any character between brackets
+
+- `$(cmd)` command substitution with expansion & parentheses 
+- `` `cmd` `` command substitution with backticks
+
++++?image=assets/bg_images/green_moon.jpg
+<p><span class="menu-title slide-title">Metacharacters & Substitutions</span></p>
+
+- `;`	Command sequence, Sequences of Commands
+- `||`	OR conditional execution
+- `&&`	AND conditional execution
+- `( )`	Group commands, Sequences of Commands
+- `&`	Run command in the background, Background Processes
+- `#`	Comment
+
+
++++?image=assets/bg_images/green_moon.jpg
+<p><span class="menu-title slide-title">Metacharacters & Substitutions</span></p>
+
+- `$`	Expand the value of a variable
+- `\`	Prevent or escape interpretation of the next character
+
+- `' '`   Single-quotes, for literal characters & escape expansion `\` (backslash)
+- `" "`   Double-quotes, to expand `\`, `$`, and `` ` `` (backtick)
+
