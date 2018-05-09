@@ -1,7 +1,7 @@
 @title[Scripting with the CLI]
 ## Scripting with the CLI
 
-### Interacting with the Shell
+### Using the Shell
 
 Something clever! <!-- .element: class="fragment" -->
 
@@ -256,4 +256,5 @@ YearStart YearEnd LocationAbbr LocationDesc DataSource Topic Question DataValueU
 Note:
 
 <-----------------EXERCISE---------------------------------------------------->
+
 
